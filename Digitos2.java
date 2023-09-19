@@ -12,13 +12,13 @@ public class Digitos2 {
 
             try{
                 System.out.println("Ingresa un número entero para contar sus digitos: ");
-                int numero = sc.nextInt();
-                String cambio = Integer.toString(numero);
+                long numero = sc.nextLong();
+                String cambio = Long.toString(numero);
                 
                 System.out.println("El número de digitos en " + numero + " es: " + cambio.length());
                 
             } catch (Exception err) {
-            System.out.println("ERROR: No es un número entero");
+            System.out.println("ERROR: No es un número entero o el número es demasiado largo.");
             } finally {
                 sc.close();
             }

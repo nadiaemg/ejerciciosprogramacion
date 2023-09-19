@@ -9,13 +9,13 @@ public class Minimo {
         
         Scanner sc = new Scanner(System.in);
         
-        int[] numero = new int[3];
-        int min = Integer.MAX_VALUE;
+        double[] numero = new double[3];
+        double min = Double.MAX_VALUE;
         
         try{
             for (int i=0; i<3; i++) {
-                System.out.print("Introduce un número entero ("+ (i+1) +"/3): ");
-                numero[i] = sc.nextInt();
+                System.out.print("Introduce un número ("+ (i+1) +"/3): ");
+                numero[i] = sc.nextDouble();
 
                 if (numero[i] < min) {
                     min = numero[i];
@@ -24,7 +24,7 @@ public class Minimo {
             System.out.println("El mínimo es: " + min);
             
         } catch (Exception err) {
-            System.out.println("ERROR: No es un número entero");
+            System.out.println("ERROR: Los datos ingresados no son válidos");
         } finally {
             sc.close();
         }

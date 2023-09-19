@@ -12,7 +12,7 @@ public class Circulo {
         
         Scanner sc = new Scanner(System.in);
         try{
-            System.out.println("Ingresa el radio del círculo para calcular su área: ");
+            System.out.println("Ingresa el radio de un círculo para calcular su área: ");
             double radio = sc.nextDouble();
 
             double area = pi*(radio*radio);

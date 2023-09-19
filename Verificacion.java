@@ -22,7 +22,7 @@ public class Verificacion {
                 System.out.println("El número es cero.");
             }
         } catch (Exception err) {
-            System.out.println("ERROR: No es un número");
+            System.out.println("ERROR: No es un número o el número es demasiado largo");
         } finally {
             sc.close();
         }

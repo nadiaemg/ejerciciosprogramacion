@@ -8,6 +8,12 @@ import java.util.Scanner;
 public class Maxcomdiv {
     public static int mcd(int a, int b) {
         
+        /*if (b == 0) {
+            return a;
+        } else {
+            return mcd(b, a % b);
+        }*/
+        
         if (a==0 || b==0){
             return 0;
         }
@@ -18,7 +24,7 @@ public class Maxcomdiv {
             return mcd(a-b, b);
         } else {
             return mcd(a, b-a);
-        }           
+        }
     }
     
     public static void main(String[] args) {
@@ -36,7 +42,7 @@ public class Maxcomdiv {
 
             System.out.println("El máximo común divisor es: " + mcdiv);
         } catch (Exception err) {
-            System.out.println("ERROR: No es un número entero");
+            System.out.println("ERROR: Los datos ingresados no son válidos");
         } finally {
             sc.close();
         }
